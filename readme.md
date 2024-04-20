@@ -43,6 +43,7 @@ rosepine.setup(c, 'rose-pine-moon', True)
 4. Done!
 ## Gallery
 
+![Rosé Pine with qutebrowser](https://github.com/aalbegr/qutebrowser-rose-pine/blob/main/assets/screenshot.png?raw=true)
 
 ## Thanks to
 
