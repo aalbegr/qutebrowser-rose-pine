@@ -19,7 +19,7 @@
 
 ```sh
 # Linux
-$ git clone https://github.com/aalbegr/qutebroser-rose-pine.git ~/.config/qutebrowser/rosepine
+$ git clone https://github.com/aalbegr/qutebrowser-rose-pine.git ~/.config/qutebrowser/rosepine
 # macOS
 $ git clone https://github.com/aalbegr/qutebrowser-rose-pine.git ~/.qutebrowser/rosepine
 # windows
