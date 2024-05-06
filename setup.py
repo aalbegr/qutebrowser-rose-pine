@@ -205,6 +205,21 @@ def setup(c, variant, samecolorrows = False):
 
     ## Highlight color for keys to complete the current keychain.
     c.colors.keyhint.suffix.fg = palette["Rose"]
+
+    ## Background color of follow hint
+    c.colors.hints.bg = palette["Surface"]
+
+    ## Text color for follow hint
+    c.colors.hints.fg = palette["Text"]
+
+    ## Highlight color for keys to complete the current keychain.
+    c.colors.hints.match.fg = palette["Rose"]
+
+    ## Border for follow hint
+    c.hints.border = f"1px solid {palette['Overlay']}"
+
+
+
     # }}}
 
     # Downloads {{{
