@@ -243,3 +243,21 @@ def setup(c, variant, samecolorrows = False):
     c.colors.prompts.selected.fg = palette["Text"]
 
     # }}}
+
+    # Error, info and warning messages {{{
+    c.colors.messages.error.bg = palette["Surface"]
+    c.colors.messages.error.border =palette["Surface"]
+    c.colors.messages.error.fg = palette["Text"]
+
+    c.colors.messages.info.bg = palette["Surface"]
+    c.colors.messages.info.border = palette["Surface"]
+    c.colors.messages.info.fg = palette["Gold"]
+
+    c.colors.messages.warning.bg = palette["Surface"]
+    c.colors.messages.warning.border = palette["Surface"]
+    c.colors.messages.warning.fg = palette["Gold"]
+
+
+
+
+    # }}}
