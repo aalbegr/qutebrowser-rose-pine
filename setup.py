@@ -98,7 +98,7 @@ def setup(c, variant, samecolorrows = False):
     c.colors.completion.fg = palette["Text"]
 
     ## Background color of the selected completion item.
-    c.colors.completion.item.selected.bg = palette["Surface"]
+    c.colors.completion.item.selected.bg = palette["HighlightMed"]
     ## Bottom border color of the selected completion item.
     c.colors.completion.item.selected.border.bottom = palette["Surface"]
     ## Top border color of the completion widget category headers.
