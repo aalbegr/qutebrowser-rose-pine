@@ -1,14 +1,13 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
 def setup(c, variant, samecolorrows = False):
-    
     # Palette {{{
     palette = {}
     if variant == "rose-pine":
         palette = {
-            "Base": "#191724",	
-            "Surface": "#1f1d2e",	
-            "Overlay": "#26233a",	
+            "Base": "#191724",
+            "Surface": "#1f1d2e",
+            "Overlay": "#26233a",
             "Muted": "#6e6a86",	
             "Subtle": "#908caa",	
             "Text": "#e0def4",	
@@ -158,33 +157,43 @@ def setup(c, variant, samecolorrows = False):
     # }}}
 
     # Tabs {{{
-    ## Background color of unselected tabs.
+    # Background color of unselected tabs.
     c.colors.tabs.bar.bg = palette["Base"]
     c.colors.tabs.even.bg = palette["Base"]
     c.colors.tabs.odd.bg = palette["Base"]
 
-    ## Foreground color of unselected tabs.
+    # Foreground color of unselected tabs.
     c.colors.tabs.even.fg = palette["Subtle"]
     c.colors.tabs.odd.fg = palette["Subtle"]
 
-    ## Background color of the selected tab.
+    # Background color of the selected tab.
     c.colors.tabs.selected.even.bg = palette["HighlightMed"]
     c.colors.tabs.selected.odd.bg = palette["HighlightMed"]
 
-    ## Foreground color of the selected tab.
+    # Foreground color of the selected tab.
     c.colors.tabs.selected.even.fg = palette["Text"]
     c.colors.tabs.selected.odd.fg = palette["Text"]
 
-    ## Color for the tab indicator.
+    # Color for the tab indicator.
     c.colors.tabs.indicator.error = palette["Gold"]
     c.colors.tabs.indicator.start = palette["Pine"]
     c.colors.tabs.indicator.stop = palette["Rose"]
+    
+    # Pinned tabs
+    c.colors.tabs.pinned.even.fg = palette["Subtle"]
+    c.colors.tabs.pinned.even.bg = palette["Overlay"]
+    c.colors.tabs.pinned.odd.fg = palette["Subtle"]
+    c.colors.tabs.pinned.odd.bg = palette["Overlay"]
+    c.colors.tabs.pinned.selected.even.fg = palette["Text"]
+    c.colors.tabs.pinned.selected.even.bg = palette["HighlightMed"]
+    c.colors.tabs.pinned.selected.odd.fg = palette["Text"]
+    c.colors.tabs.pinned.selected.odd.bg = palette["HighlightMed"]
+    
     # }}}
 
     # Background color of webpages {{{
     c.colors.webpage.bg = palette["Base"]
     # }}}
-    
     # Context menu {{{
     c.colors.contextmenu.menu.bg = palette["Surface"]
     c.colors.contextmenu.menu.fg = palette["Text"]
